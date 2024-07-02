@@ -1,0 +1,84 @@
+    @import url('https://fonts.googleapis.com/css2?family=Playwrite+ES:wght@100..400&display=swap');
+
+
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: 'Playwrite ES', sans-serif;
+      /* Apply the Playwrite ES font */
+      font-weight: 400;
+      /* Use font weight 400 */
+      text-align: center;
+      /* Center align the heading */
+
+    }
+
+/* calculate.css */
+
+body {
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+
+.layout {
+  display: grd;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.layout div {
+  background-color: #e0f7fa;
+  padding: 10px;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+}
+
+.layout div label {
+  color: #00796b;
+  font-weight: bold;
+}
+
+.layout div input {
+  margin-top: 5px;
+  padding: 8px;
+  border: 1px solid #00796b;
+  border-radius: 4px;
+}
+
+.layout .p7 button {
+  background-color: #00796b;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.layout .p7 button:hover {
+  background-color: #004d40;
+}
+
+.layout .p7 {
+  display: flex;
+  justify-content: center;
+}
+
+
+
+ 

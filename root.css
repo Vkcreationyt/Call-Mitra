@@ -1,0 +1,38 @@
+:root {
+  
+    --font-size-body: 15pt;
+    --background-color-body: #818AE7;
+    --background-color-header: rgba(235, 155, 125, 0.15);
+    --backdrop-filter-header: blur(10px);
+    --padding-header: 10px;
+    --border-radius-header: 10px;
+    --box-shadow-header: 0 2px 10px rgba(0, 0, 0, 0.1);
+    --margin-bottom-header: 30px;
+    --font-size-header-h3: 24px;
+    --text-align-button: right;
+    --background-button: rgba(255, 255, 255, 0.15);
+    --border-radius-button: 8px;
+    --color-button: #fff;
+    --padding-button: 10px 20px;
+    --font-size-button: 18px;
+    --box-shadow-button: 0 2px 10px rgba(0, 0, 0, 0.1);
+    --background-hover-button: rgba(255, 255, 255, 0.25);
+    --background-container: rgba(255, 255, 255, 0.15);
+    --border-radius-container: 15px;
+    --box-shadow-container: 0 4px 30px rgba(0, 0, 0, 0.1);
+    --color-container: white;
+    --font-size-container-h2: 28px;
+    --margin-bottom-container-h2: 20px;
+    --background-service: rgba(255, 255, 255, 0.1);
+    --border-radius-service: 10px;
+    --box-shadow-service: 0 2px 15px rgba(0, 0, 0, 0.1);
+    --color-service-content: #ccc;
+    --font-size-service-content-h3: 22px;
+    --font-size-service-content-p: 16px;
+    --background-footer: rgba(255, 255, 255, 0.15);
+    --border-radius-footer: 15px;
+    --box-shadow-footer: 0 4px 30px rgba(0, 0, 0, 0.1);
+    --margin-footer: 10px;
+    --color-footer: #fff;
+    --color-footer-hover: #aaa;
+}

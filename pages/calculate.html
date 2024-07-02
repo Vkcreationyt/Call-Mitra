@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Price Calculator</title>
+  <link rel="stylesheet" href="/pages/calculate.css">
+  
+</head>
+
+
+<style>
+  <!--Tab to edit-->
+  
+      @import url('https://fonts.googleapis.com/css2?family=Playwrite+ES:wght@100..400&display=swap');
+
+
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: 'Playwrite ES', sans-serif;
+      /* Apply the Playwrite ES font */
+      font-weight: 400;
+      /* Use font weight 400 */
+      text-align: center;
+      /* Center align the heading */
+
+    }
+
+/* calculate.css */
+
+body {
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+
+.layout {
+  display: grd;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.layout div {
+  background-color: #e0f7fa;
+  padding: 10px;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+}
+
+.layout div label {
+  color: #00796b;
+  font-weight: bold;
+}
+
+.layout div input {
+  margin-top: 5px;
+  padding: 8px;
+  border: 1px solid #00796b;
+  border-radius: 4px;
+}
+
+.layout .p7 button {
+  background-color: #00796b;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.layout .p7 button:hover {
+  background-color: #004d40;
+}
+
+.layout .p7 {
+  display: flex;
+  justify-content: center;
+}
+
+
+
+ 
+  
+  
+</style>
+<body>
+  
+  
+  <div class="container">
+  <h1>PRICE CALCULATOR</h1>
+
+  <div class="layout">
+    
+    
+    
+    <div class="p1">
+      <label for="price">Price</label>
+      <input type="number" id="price">
+    </div>
+    <br>
+
+
+
+
+    <div   class="p2">
+      <label for="piece">Piece</label>
+      <input type="number" id="piece">
+
+    </div>
+    <br>
+
+
+
+    <div class="p3">
+      <label for="percentage">Percentage %</label>
+      <input type="number" id="percentage">
+    </div>
+    <br>
+
+
+
+    <div class="p4">
+      <label for="answer">Value</label>
+      <input type="number" id="answer" readonly>
+
+
+    </div>
+
+
+    <br>
+
+
+
+    <div class="p5">
+      <label for="perpiece">Per-piece</label>
+      <input type="number" id="perpiece" readonly>
+    </div>
+    <br>
+    
+    
+    
+    <div class="p6">
+      <label for="total">Total</label>
+      <input type="number" id="total" readonly>
+    </div>
+    
+    
+    
+    <br>
+    
+    
+    
+    
+    <div  class="p7">
+      <button onclick="calculate()">Calculate</button>
+    </div>
+
+  </div>
+
+</div>
+
+  <script>
+    function calculate() {
+      // Get values from input fields
+      let price = parseFloat(document.getElementById('price').value);
+      let piece = parseFloat(document.getElementById('piece').value);
+      let percentage = parseFloat(document.getElementById('percentage').value);
+
+      // Perform calculations
+      let value = (price * percentage) / 100;
+      let perPiece = price / piece;
+      let total = value + price;
+
+      // Set calculated values to the respective fields
+      document.getElementById('answer').value = value.toFixed(2);
+      document.getElementById('perpiece').value = perPiece.toFixed(2);
+      document.getElementById('total').value = total.toFixed(2);
+    }
+  </script>
+</body>
+
+</html>
