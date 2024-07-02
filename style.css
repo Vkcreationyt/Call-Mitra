@@ -52,6 +52,11 @@ img {
 
 
 
+summary{
+  color: #6183FF;
+  
+}
+
 
   
 
@@ -193,10 +198,10 @@ img {
       position: fixed;
       top: 0;
       left: 0;
-      height: 100%;
-      width: 80%;
+      height: 400px;
+      width:  100%;
       max-width: 300px;
-      background: rgba(255, 255, 255, 0.1);
+      background: rgba(235, 235, 255, 1.32);
       backdrop-filter: blur(15px);
       box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
       transform: translateX(-100%);

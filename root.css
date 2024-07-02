@@ -1,7 +1,7 @@
 :root {
   
     --font-size-body: 15pt;
-    --background-color-body: #818AE7;
+    --background-color-body: black;
     --background-color-header: rgba(235, 155, 125, 0.15);
     --backdrop-filter-header: blur(10px);
     --padding-header: 10px;
