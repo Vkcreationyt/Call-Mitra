@@ -1,72 +1,218 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rubik's Cube Game</title>
-    <style>
-        body { margin: 0; }
-        canvas { display: block; }
-    </style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title > Zathura </title>
+  <link rel="stylesheet" href="style.css">
+  
+  
+  <link rel="shortcut icon" type="image/x-icon" href="/images.jpeg">
+  <link rel="stylesheet" href="root.css">
 </head>
 <body>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-    <script>
-        // Initialize Three.js scene
-        const scene = new THREE.Scene();
-        const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
-        const renderer = new THREE.WebGLRenderer();
-        renderer.setSize(window.innerWidth, window.innerHeight);
-        document.body.appendChild(renderer.domElement);
+  <div class="background">
+  <header class="glass-header">
+  <h3>Zathura</h3>
+    <div class="button-container">
+        <button id="openMenu" class="glass-button">☰</button>
+    
+  <nav id="curtainMenu" class="curtain-menu">
+    <button id="closeMenu" class="close-btn">&times;</button>
+    <ul>
+      <li><a href="#">Home</a></li>
+     
+  <li><a href="#">About Us</a></li>
+  
+  
+   
+   
+  <li><a href="#" onclick="location.href='/pages/calculate.html'"       >Services</a>
+  <div id="dropdown">
+    <a href="/pages/calculate.html"> price calculator</a>
+  </div>
+  
+  
+  </li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
 
-        // Create cube materials
-        const materials = [
-            new THREE.MeshBasicMaterial({ color: 0xff0000 }), // red
-            new THREE.MeshBasicMaterial({ color: 0x00ff00 }), // green
-            new THREE.MeshBasicMaterial({ color: 0x0000ff }), // blue
-            new THREE.MeshBasicMaterial({ color: 0xffff00 }), // yellow
-            new THREE.MeshBasicMaterial({ color: 0xffffff }), // white
-            new THREE.MeshBasicMaterial({ color: 0xffa500 })  // orange
-        ];
+    </div>
+  </header>
+  
 
-        // Create a Rubik's Cube
-        const cubeSize = 1;
-        const cubeGeometry = new THREE.BoxGeometry(cubeSize, cubeSize, cubeSize);
 
-        const cube = new THREE.Group();
+ 
+  <div class="glass-container">
+    
+    <h1> hello  brother! </h1>
+   
+   
 
-        // Create cubies and position them in a grid
-        for (let x = -1; x <= 1; x++) {
-            for (let y = -1; y <= 1; y++) {
-                for (let z = -1; z <= 1; z++) {
-                    const cubie = new THREE.Mesh(cubeGeometry, materials);
-                    cubie.position.set(x * cubeSize, y * cubeSize, z * cubeSize);
-                    cube.add(cubie);
-                }
-            }
-        }
+   
+     </div>
+  
+  
+  
+  
+  
+  
 
-        scene.add(cube);
 
-        // Position and animate the camera
-        camera.position.z = 5;
 
-        // Function to rotate the cube's faces
-        function rotateCube(faceIndex, clockwise) {
-            // Perform rotation logic based on faceIndex and direction
-            // Update cube's rotation and colors accordingly
-            // Example: rotating the front face clockwise
-            const angle = clockwise ? Math.PI / 2 : -Math.PI / 2;
-            const axis = new THREE.Vector3(0, 1, 0);
-            cube.rotateOnAxis(axis, angle);
-        }
+    
+    
+    
+    
+    
+  <div class="glass-container">
+    <h2>Our Services</h2>
+    <div class="services-wrapper">
+      <div class="service">
+        <img src="/images.jpeg" alt="Service Icon 1">
+        <div class="service-content">
+          <h3>Web Development</h3>
+          <p>Web development with new 3D designs and modern technology, featuring attractive SFX.</p>
+        </div>
+      </div>
+      <div class="service">
+        <img src="/images.jpeg" alt="Service Icon 2">
+        <div class="service-content">
+          
+          <h3>Hosting </h3>
+          <p>
+            HOST your own domain 
+          </p>
+        </div>
+      </div>
+      
+      <div class="service">
+        <img src="/images.jpeg" alt="Service Icon 3">
+        <div class="service-content">
+          <h3>web automation</h3>
+          <p>Brief description of Service.</p>
+        </div>
+      </div>
+      
+      
+      
+      
+      
+      
+      
+    </div>
+  </div>
+  
+  
 
-        // Render loop
-        function animate() {
-            requestAnimationFrame(animate);
-            renderer.render(scene, camera);
-        }
-        animate();
-    </script>
+  
+  
+  <div class="glass-container">
+    <h2>Testimonials</h2>
+    <div class="testimonials-wrapper">
+      <!-- Testimonial pairs will be inserted here dynamically -->
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+<form   class="glass-container" action="https://api.web3forms.com/submit" method="POST">
+<br>
+
+  <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+  
+<label for="name">Name</label>
+  <input type="text" name="name" required  ><br>
+  <label for="Email">e-mail</label>
+      <input type="email" name="email" required>
+      <br>
+      <label for="message">message</label>
+  <textarea name="message" required></textarea><br>
+  
+  <input type="hidden" name="redirect" value="https://web3forms.com/success">
+<br>
+  <button type="submit">Submit Form</button>
+
+</form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!--footer-->
+
+  <footer class="glass-footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>Contact Us</h3>
+        <ul>
+          <li>Email: contact@yourcompany.com</li>
+          <li>Phone: +123 456 7890</li>
+          <li>Address: 123 Street Name, City, Country</li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    
+      <div class="footer-section">
+        <h3>Follow Us</h3>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+    <p>&copy; 2024 Zathura. All rights reserved.</p>
+  </footer>
+</div>
+  <!-- Add FontAwesome for social media icons -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  
+
+  <script src="main.js"></script>
+  
 </body>
 </html>
