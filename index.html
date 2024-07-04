@@ -6,8 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title > Zathura </title>
   <link rel="stylesheet" href="style.css">
-  
-  
+  <link rel="import" href="/quote-app/index.html">
+<link rel="stylesheet" href="/quote-app/style.css">
   <link rel="shortcut icon" type="image/x-icon" href="/images.jpeg">
   <link rel="stylesheet" href="root.css">
 </head>
@@ -17,27 +17,21 @@
   <h3>Zathura</h3>
     <div class="button-container">
         <button id="openMenu" class="glass-button">☰</button>
-    
-  <nav id="curtainMenu" class="curtain-menu">
+<nav id="curtainMenu" class="curtain-menu">
     <button id="closeMenu" class="close-btn">&times;</button>
     <ul>
-      <li><a href="#">Home</a></li>
-     
-  <li><a href="#">About Us</a></li>
-  
-  
-   
-   
-  <li><a href="#" onclick="location.href='/pages/calculate.html'"       >Services</a>
-  <div id="dropdown">
-    <a href="/pages/calculate.html"> price calculator</a>
-  </div>
-  
-  
-  </li>
-      <li><a href="#">Contact</a></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li id="servicesDropdown">
+            <a href="#">Services</a>
+            <div id="dropdown">
+                <a href="/pages/calculate.html">Price Calculator</a>
+                <!-- Add more sub-elements as needed -->
+            </div>
+        </li>
+        <li><a href="#">Contact</a></li>
     </ul>
-  </nav>
+</nav>
 
     </div>
   </header>
@@ -49,7 +43,16 @@
     
     <h1> hello  brother! </h1>
    
-   
+    <div id="quoteWidget">
+        <div id="quoteContainer">
+            <p id="quoteText"></p>
+            <p id="quoteAuthor"></p>
+        </div>
+        <div id="buttonContainer">
+            <button id="getQuoteButton">Get Quote</button>
+            <button id="shareButton">Share it </button>
+        </div>
+    </div>
 
    
      </div>
@@ -211,7 +214,7 @@
   <!-- Add FontAwesome for social media icons -->
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
   
-
+<script src="/quote-app/script.js"></script>
   <script src="main.js"></script>
   
 </body>

@@ -15,10 +15,34 @@
 
 
 
+    document.addEventListener('DOMContentLoaded', function() {
+    const servicesDropdown = document.getElementById('servicesDropdown');
+    const dropdown = document.getElementById('dropdown');
+
+    servicesDropdown.addEventListener('click', function(event) {
+        // Toggle the display of the dropdown
+        dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+        
+        // Prevent the default behavior of the link
+        event.preventDefault();
+    });
+
+    // Close the dropdown when clicking outside of it
+    document.addEventListener('click', function(event) {
+        if (!servicesDropdown.contains(event.target)) {
+            dropdown.style.display = 'none';
+        }
+    });
+});
+
     
     
     
-    
+
+
+
+
+
 
 
 
