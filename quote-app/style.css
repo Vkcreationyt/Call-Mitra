@@ -1,22 +1,29 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-}
 
-#app {
+#quoteWidget {
     background: white;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
+    width: 300px;
 }
 
-#getQuoteButton {
+#quoteContainer {
+    margin-bottom: 20px;
+}
+
+#quoteText {
+    font-size: 20px;
+    font-style: italic;
+}
+
+#quoteAuthor {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#buttonContainer button {
+    margin: 0 10px;
     padding: 10px 20px;
     border: none;
     background-color: #007bff;
@@ -25,12 +32,6 @@ body {
     cursor: pointer;
 }
 
-#getQuoteButton:hover {
+#buttonContainer button:hover {
     background-color: #0056b3;
-}
-
-#quote {
-    margin-top: 20px;
-    font-size: 18px;
-    font-style: italic;
 }

@@ -3,14 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quote of the Day</title>
+    <title>Quote of the Day Widget</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="app">
-        <h1>Quote of the Day</h1>
-        <button id="getQuoteButton">Get a Quote</button>
-        <div id="quote"></div>
+    <div id="quoteWidget">
+        <div id="quoteContainer">
+            <p id="quoteText"></p>
+            <p id="quoteAuthor"></p>
+        </div>
+        <div id="buttonContainer">
+            <button id="getQuoteButton">Get Quote</button>
+            <button id="shareButton">Share</button>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>
