@@ -226,6 +226,34 @@ summary{
     .curtain-menu.show {
       transform: translateX(0);
     }
+.dropdown-content {
+  display: none;
+  /* Initially hide the dropdown */
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 5px;
+}
+
+.dropdown-content a {
+  color: #4623FF;
+  padding: 10px 20px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+
+
+
+
+
 
         .glass-container {
       background: rgba(255, 255, 255, 0.1);

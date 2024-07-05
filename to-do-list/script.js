@@ -19,4 +19,5 @@ document.getElementById('addTaskButton').addEventListener('click', function() {
 
         taskInput.value = '';
     }
+
 });

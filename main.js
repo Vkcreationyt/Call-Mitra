@@ -10,6 +10,22 @@
 
 
 
+document.addEventListener("DOMContentLoaded", function() {
+    const servicesLink = document.getElementById("servicesLink");
+    const dropdown = document.getElementById("dropdown");
+
+    servicesLink.addEventListener("click", function(event) {
+        event.preventDefault();
+        dropdown.style.display = (dropdown.style.display === "block") ? "none" : "block";
+    });
+
+    // Optionally, hide the dropdown when clicking outside of it
+    document.addEventListener("click", function(event) {
+        if (!event.target.closest("#servicesDropdown")) {
+            dropdown.style.display = "none";
+        }
+    });
+});
 
 
 
